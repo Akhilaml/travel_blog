@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* background-color: black; */
+}
+nav{
+    /* background-color: transparent; */
+    background-color: black;
+    height: 50px;
+    display: flex;
+     /* justify-content: center; */
+     align-items: center;  
+    position: sticky;
+    top:0; 
+     z-index: 1;
+}
+
+nav ul{
+    display: flex;
+
+
+}
+
+nav ul li a{
+    color: rgba(185, 5, 245, 0.762);
+    font-weight: bolder;
+    margin: 20px;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: xx-large;
+    color: rgb(243, 249, 255);
+}
+.overlay h1 {
+    animation: scaleFadeIn 2s ease-in-out forwards; 
+    opacity: 0; 
+    transform: scale(0.5);
+   
+}
+.overlay h1:hover{
+    text-decoration: underline;
+    color: rgba(209, 126, 236, 0.762);
+    cursor: pointer;
+}
+
+@keyframes scaleFadeIn {
+    0% { 
+        opacity: 0;
+        transform: scale(0.5); 
+    }
+    100% { 
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+
+h1:hover{
+    text-shadow: 2px 4px 6px  rgba(185, 5, 245, 0.762);
+    text-decoration:underline;
+}
+span{
+    color:  rgba(185, 5, 245, 0.762);
+    font-size: 20px;
+}
+
+/* .logo {
+    display: flex;
+    justify-content: left;
+} */
+.name {
+    font-size: 2.0em; 
+}
+
+#about {
+    display: flex;
+    flex-direction:column;
+    height: 450px;
+    width: 100%;
+    position: relative;
+}
+
+#about::before {
+    content: "";
+    /* background-image: url('images/sarah-drasner-thumb.jpg'); */
+    /* background-image: url('https://heypresents.com/assets/talks/future-of-animation/cover-62ebaec2cd8c5429979f8287f6e87da458356ec865c6434148e6486665c0ee5f.jpg'); */
+    background-size: cover; 
+    background-position: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; 
+    width: 50%;
+}
+
+.pic{
+    display: flex;
+    margin-top: 10px;
+    word-spacing: 8px;
+    line-height: 1.2;
+    
+
+}
+.pic img{
+    width: 500px;
+
+}
+.pic h4{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+
+}
+.pic p{
+    text-align: justify;
+    padding: 25px;
+    font-style: italic;
+    border: 20%;
+}
+
+h3{
+    text-align: center;
+    background-color: rgba(185, 5, 245, 0.881);
+    color: white;
+    margin-top: 5px;
+}
+
+.intro {
+    border: 3px solid #333; 
+    padding: 20px; 
+    background-color: #f1efefaf;
+    box-shadow: 0 4px 8px rgba(119, 61, 61, 0.1); 
+    max-width: 600px; 
+    margin: 20px auto; 
+    border-radius: 15px; 
+    font-family: Arial, sans-serif; 
+    animation: scaleFadeIn 1s ease-out; 
+}
+
+
+
+.gallery img{
+    width: 450px;
+    margin-left: 30px;
+    padding: 30px;
+}
+.row {
+    background-color: rgb(20, 8, 8);
+    display: flex;
+}
+
+.box {
+    border: 2px inset blueviolet;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+    background-size: 100% 200%;
+    transition: all 0.6s;
+}
+
+.box:hover {
+    background-position: right bottom;
+}
+
+.box img {
+    width: 100%;
+    transition: transform 0.6s;
+}
+
+.box img:hover {
+    transform: scale(1.06);
+}
+
+.box h5 {
+    margin-top: 10px;
+    color: rgba(185, 5, 245, 0.762);
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.8) 50%);
+    background-size: 200% 100%;
+    transition: all 0.6s;
+    display: inline-block;
+    padding: 5px;
+}
+
+.box h5:hover {
+    text-decoration: underline;
+    background-position: right;
+}
+
+.box p {
+    text-align: justify;
+    font-style: inherit;
+    color: rgba(185, 5, 245, 0.762);
+    background: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.8) 50%);
+    background-size: 200% 100%;
+    transition: all 0.6s;
+    display: inline-block;
+    padding: 5px;
+}
+
+.box:hover p {
+    background-position: right;
+}
+
+
+form{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #333;
+    color: white; 
+    background-color: #100d0d;
+    box-shadow: 0 4px 8px rgba(119, 61, 61, 0.1); 
+    max-width: 600px; 
+    margin: 20px auto; 
+    border-radius: 15px; 
+}
+.input{
+    width: 80%;
+    margin-left: 10px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+
+button{
+    color: azure;
+    background-color: rgb(210, 5, 207);
+    padding: 20px;
+    cursor: pointer;
+    
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(31, 20, 24);
+    color: white;
+  }
